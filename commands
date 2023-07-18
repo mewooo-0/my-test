@@ -1,1 +1,9 @@
 sudo usermod -e $(date -d "+30 days" +"%Y-%m-%d") myuser
+
+https://www.howtouselinux.com/post/change-user-password-expiration-date-in-linux
+
+ sudo chage --expiredate \
+$(date -d +90days +%Y-%m-%d) user1
+
+
+sudo chage -E 2022-07-15 user1
